@@ -18,7 +18,7 @@ const [reg,setReg] = useState();
     fetch("http://isgenderli.com/registrationForm",{
       method: 'POST',
       credentials:"same-origin",
-      mode:"cros",
+      mode:"cors",
       body: data
     })
       .then(res=>res.text())
